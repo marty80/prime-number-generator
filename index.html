@@ -10,29 +10,33 @@
 <body>
     <div class="container">
         <h1>Random Prime Number Generator</h1>
-        <p class="description">Generate random prime numbers between 1 and 1000</p>
+        <div class="content-wrapper">
+            <div class="form-section">
+                <p class="description">Generate random prime numbers between 1 and 1000</p>
 
-        <div class="prime-display">
-            <span id="prime-number">-</span>
-        </div>
+                <div class="prime-display">
+                    <span id="prime-number">-</span>
+                </div>
 
-        <button id="generate-btn">Generate Prime Number</button>
+                <button id="generate-btn">Generate Prime Number</button>
 
-        <div class="range-container">
-            <div class="range-control">
-                <label for="min-range">Min: <span id="min-value">1</span></label>
-                <input type="range" id="min-range" min="1" max="999" value="1">
+                <div class="range-container">
+                    <div class="range-control">
+                        <label for="min-range">Min: <span id="min-value">1</span></label>
+                        <input type="range" id="min-range" min="1" max="999" value="1">
+                    </div>
+                    <div class="range-control">
+                        <label for="max-range">Max: <span id="max-value">1000</span></label>
+                        <input type="range" id="max-range" min="2" max="1000" value="1000">
+                    </div>
+                </div>
             </div>
-            <div class="range-control">
-                <label for="max-range">Max: <span id="max-value">1000</span></label>
-                <input type="range" id="max-range" min="2" max="1000" value="1000">
-            </div>
-        </div>
 
-        <div class="chart-container">
-            <h2>Prime Number Dial</h2>
-            <div class="chart-wrapper">
-                <canvas id="primeChart"></canvas>
+            <div class="chart-container">
+                <h2>Prime Number Dial</h2>
+                <div class="chart-wrapper">
+                    <canvas id="primeChart"></canvas>
+                </div>
             </div>
         </div>
     </div>
